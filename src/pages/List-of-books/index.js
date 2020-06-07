@@ -16,8 +16,6 @@ export default function ListOfBook() {
     function searchForBook(e) {
         e.preventDefault();
 
-        moment.locale('pt-br');
-
         if (search) {
             api.get(search)
                 .then(response => {                 
